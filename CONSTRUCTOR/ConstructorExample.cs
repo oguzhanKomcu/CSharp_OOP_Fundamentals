@@ -45,7 +45,7 @@ namespace CONSTRUCTOR
         {
 
 
-            Television tv3 = new Television(cmbResolution.Text,cmbSmarttv.Text,cmbDisplayTec.Text);
+            Television tv4 = new Television(cmbResolution.Text,cmbSmarttv.Text,cmbDisplayTec.Text);
 
 
 
