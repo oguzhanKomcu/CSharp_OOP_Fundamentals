@@ -21,7 +21,7 @@ namespace CLASS
         public string Gender;
         public int Gear;
         public int Price;
-        public string Color;
+        public string color;
 
 
     }
