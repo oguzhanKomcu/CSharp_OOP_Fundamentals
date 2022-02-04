@@ -13,7 +13,7 @@
             //classname + variable + = + new + classname();
             // " = " : The " = " operator that points to and refers to.
             // "new" : It means create a new object from this class.
-            // "classname();" : If there is no constructor in the constructor.Class, which is directly activated in the first run of the class, this constructor comes as default.
+            // "classname();" : If there is no constructor in the constructor.Class, which is directly activated in the first run of the class, this constructor comes as default
             Bike bike1 = new Bike();
 
             //We gave the values ​​to the fields created in the class of our object.
