@@ -38,13 +38,13 @@ namespace War_Game_Project.model
         public void Eraser(GroupBox groupBox)
         {
 
-            foreach (Control control in groupBox.Controls) // elemanları siliyoruz..
+            foreach (Control control in groupBox.Controls) 
             {
-                if (control is MaskedTextBox) //tc ve phone maskedtxtbox oldugu için onları silicek..
+                if (control is MaskedTextBox) 
                 {
                     control.Text = String.Empty;
                 }
-                else if (control is TextBox)  //textboxları silicek
+                else if (control is TextBox)  
                 {
                     control.Text = String.Empty;
                 }
