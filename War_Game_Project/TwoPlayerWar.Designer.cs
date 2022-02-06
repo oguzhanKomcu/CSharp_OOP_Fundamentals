@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBoxWAR = new System.Windows.Forms.GroupBox();
+            this.btnFiree2 = new System.Windows.Forms.Button();
+            this.btnFiree1 = new System.Windows.Forms.Button();
             this.label232 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.labeluUSER2HEALTH = new System.Windows.Forms.Label();
@@ -53,8 +55,10 @@
             this.comboBoxRank = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnFiree1 = new System.Windows.Forms.Button();
-            this.btnFiree2 = new System.Windows.Forms.Button();
+            this.lblstrength2 = new System.Windows.Forms.Label();
+            this.lblstrength1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBoxWAR.SuspendLayout();
             this.groupBoxWarrior2.SuspendLayout();
             this.groupBoxWarrior1.SuspendLayout();
@@ -62,6 +66,10 @@
             // 
             // groupBoxWAR
             // 
+            this.groupBoxWAR.Controls.Add(this.lblstrength2);
+            this.groupBoxWAR.Controls.Add(this.lblstrength1);
+            this.groupBoxWAR.Controls.Add(this.label1);
+            this.groupBoxWAR.Controls.Add(this.label10);
             this.groupBoxWAR.Controls.Add(this.btnFiree2);
             this.groupBoxWAR.Controls.Add(this.btnFiree1);
             this.groupBoxWAR.Controls.Add(this.label232);
@@ -71,15 +79,35 @@
             this.groupBoxWAR.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBoxWAR.Location = new System.Drawing.Point(42, 388);
             this.groupBoxWAR.Name = "groupBoxWAR";
-            this.groupBoxWAR.Size = new System.Drawing.Size(812, 255);
+            this.groupBoxWAR.Size = new System.Drawing.Size(812, 268);
             this.groupBoxWAR.TabIndex = 4;
             this.groupBoxWAR.TabStop = false;
             this.groupBoxWAR.Text = "WAR";
             // 
+            // btnFiree2
+            // 
+            this.btnFiree2.Location = new System.Drawing.Point(596, 188);
+            this.btnFiree2.Name = "btnFiree2";
+            this.btnFiree2.Size = new System.Drawing.Size(167, 57);
+            this.btnFiree2.TabIndex = 3;
+            this.btnFiree2.Text = "FİRE";
+            this.btnFiree2.UseVisualStyleBackColor = true;
+            this.btnFiree2.Click += new System.EventHandler(this.btnFiree2_Click);
+            // 
+            // btnFiree1
+            // 
+            this.btnFiree1.Location = new System.Drawing.Point(37, 188);
+            this.btnFiree1.Name = "btnFiree1";
+            this.btnFiree1.Size = new System.Drawing.Size(180, 57);
+            this.btnFiree1.TabIndex = 2;
+            this.btnFiree1.Text = "FİRE";
+            this.btnFiree1.UseVisualStyleBackColor = true;
+            this.btnFiree1.Click += new System.EventHandler(this.btnFiree1_Click);
+            // 
             // label232
             // 
             this.label232.AutoSize = true;
-            this.label232.Location = new System.Drawing.Point(586, 114);
+            this.label232.Location = new System.Drawing.Point(572, 137);
             this.label232.Name = "label232";
             this.label232.Size = new System.Drawing.Size(179, 32);
             this.label232.TabIndex = 1;
@@ -88,7 +116,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(45, 114);
+            this.label12.Location = new System.Drawing.Point(31, 137);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(179, 32);
             this.label12.TabIndex = 1;
@@ -97,7 +125,7 @@
             // labeluUSER2HEALTH
             // 
             this.labeluUSER2HEALTH.BackColor = System.Drawing.Color.Red;
-            this.labeluUSER2HEALTH.Location = new System.Drawing.Point(451, 60);
+            this.labeluUSER2HEALTH.Location = new System.Drawing.Point(437, 83);
             this.labeluUSER2HEALTH.Name = "labeluUSER2HEALTH";
             this.labeluUSER2HEALTH.Size = new System.Drawing.Size(326, 40);
             this.labeluUSER2HEALTH.TabIndex = 0;
@@ -105,7 +133,7 @@
             // labeluUSER1HEALTH
             // 
             this.labeluUSER1HEALTH.BackColor = System.Drawing.Color.Red;
-            this.labeluUSER1HEALTH.Location = new System.Drawing.Point(45, 60);
+            this.labeluUSER1HEALTH.Location = new System.Drawing.Point(31, 83);
             this.labeluUSER1HEALTH.Name = "labeluUSER1HEALTH";
             this.labeluUSER1HEALTH.Size = new System.Drawing.Size(326, 40);
             this.labeluUSER1HEALTH.TabIndex = 0;
@@ -365,25 +393,41 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Rank :";
             // 
-            // btnFiree1
+            // lblstrength2
             // 
-            this.btnFiree1.Location = new System.Drawing.Point(51, 165);
-            this.btnFiree1.Name = "btnFiree1";
-            this.btnFiree1.Size = new System.Drawing.Size(180, 57);
-            this.btnFiree1.TabIndex = 2;
-            this.btnFiree1.Text = "FİRE";
-            this.btnFiree1.UseVisualStyleBackColor = true;
-            this.btnFiree1.Click += new System.EventHandler(this.btnFiree1_Click);
+            this.lblstrength2.AutoSize = true;
+            this.lblstrength2.Location = new System.Drawing.Point(683, 43);
+            this.lblstrength2.Name = "lblstrength2";
+            this.lblstrength2.Size = new System.Drawing.Size(0, 32);
+            this.lblstrength2.TabIndex = 7;
             // 
-            // btnFiree2
+            // lblstrength1
             // 
-            this.btnFiree2.Location = new System.Drawing.Point(610, 165);
-            this.btnFiree2.Name = "btnFiree2";
-            this.btnFiree2.Size = new System.Drawing.Size(167, 57);
-            this.btnFiree2.TabIndex = 3;
-            this.btnFiree2.Text = "FİRE";
-            this.btnFiree2.UseVisualStyleBackColor = true;
-            this.btnFiree2.Click += new System.EventHandler(this.btnFiree2_Click);
+            this.lblstrength1.AutoSize = true;
+            this.lblstrength1.Location = new System.Drawing.Point(139, 43);
+            this.lblstrength1.Name = "lblstrength1";
+            this.lblstrength1.Size = new System.Drawing.Size(0, 32);
+            this.lblstrength1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(31, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 21);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "STRENGTH :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(577, 52);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(100, 21);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "STRENGTH :";
             // 
             // TwoPlayerWar
             // 
@@ -435,5 +479,9 @@
         private Button btnSelect2;
         private Button btnFiree2;
         private Button btnFiree1;
+        private Label lblstrength2;
+        private Label lblstrength1;
+        private Label label1;
+        private Label label10;
     }
 }

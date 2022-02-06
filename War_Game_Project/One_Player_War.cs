@@ -29,15 +29,19 @@ namespace War_Game_Project
             {
                 MessageBox.Show("Please enter information..!");
             }
+            else
+            {
+                user1.FirstName = textFirstName.Text;
+                user1.LastName = textLastName.Text;
+                user1.NickName = textNickName.Text;
+                DateTime now = DateTime.Now;
+                user1.Age = now.Year - int.Parse(textBirtyear.Text);
+                groupBoxUserMilitary.Visible = true;
+                grpUserProfile.Visible = false;
+                Clears.Eraser(grpUserProfile);
+            }
 
-            user1.FirstName = textFirstName.Text;
-            user1.LastName = textLastName.Text;
-            user1.NickName = textNickName.Text;
-            DateTime now = DateTime.Now;
-            user1.Age = now.Year - int.Parse(textBirtyear.Text);
-            groupBoxUserMilitary.Visible = true;
-            grpUserProfile.Visible = false;          
-            Clears.Eraser(grpUserProfile);
+
 
 
         }
@@ -75,11 +79,15 @@ namespace War_Game_Project
             if (labelWarrior2health.Width <= 0)
             {
                 MessageBox.Show($"{user1.NickName.ToString()} KİLLED !!. YOU WİNN ");
+                this.Hide();
+                Application.Exit();
 
             }
-            if (labelWarrior1Health.Width <= 0)
+            else if (labelWarrior1Health.Width <= 0)
             {
                 MessageBox.Show($"{user1.NickName.ToString()} YOU DID AND LOSE !! ");
+                this.Hide();
+                Application.Exit();
             }
         }
 
