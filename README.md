@@ -15,5 +15,5 @@
  
  You can view the creation of the class here. [GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/CONSTRUCTOR/Television.cs).
  
- You can see how it works when we create an object here. [GitHub Pages](hhttps://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/CONSTRUCTOR/ConstructorExample.cs).
+ You can see how it works when we create an object here. [GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/CONSTRUCTOR/ConstructorExample.cs).
  
