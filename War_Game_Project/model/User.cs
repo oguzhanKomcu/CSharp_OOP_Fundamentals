@@ -28,6 +28,8 @@ namespace War_Game_Project.model
                 else
                 {
                     MessageBox.Show("Children under 18 cannot register for this game!!");
+                    TextBox textBox = new TextBox();
+                    textBox.Text = "";
                 }
 
 

@@ -32,6 +32,7 @@ namespace War_Game_Project
             user1.Age = now.Year - int.Parse(textBirtyear.Text);
 
 
+
             User user2 = new User();
             user2.FirstName = textFirstName.Text;
             user2.LastName = textLastName.Text;
@@ -40,9 +41,14 @@ namespace War_Game_Project
             DateTime now2 = DateTime.Now;
             user2.Age = now2.Year - int.Parse(textBirtyear.Text);
 
-            TwoPlayerWar tp = new TwoPlayerWar();
-            tp.Show();
-            this.Hide();    
+            if (user1.Age > 18 && user2.Age > 18)
+            {
+                TwoPlayerWar tp = new TwoPlayerWar();
+                tp.Show();
+                this.Hide();
+            }
+
+   
         }
 
         private void _2playerUser_FormClosing(object sender, FormClosingEventArgs e)

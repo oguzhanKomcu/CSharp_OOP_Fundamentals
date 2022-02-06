@@ -36,9 +36,13 @@ namespace War_Game_Project
                 user1.NickName = textNickName.Text;
                 DateTime now = DateTime.Now;
                 user1.Age = now.Year - int.Parse(textBirtyear.Text);
-                groupBoxUserMilitary.Visible = true;
-                grpUserProfile.Visible = false;
-                Clears.Eraser(grpUserProfile);
+                if(user1.Age > 18)
+                {
+                    groupBoxUserMilitary.Visible = true;
+                    grpUserProfile.Visible = false;
+                    Clears.Eraser(grpUserProfile);
+                }
+                
             }
 
 
