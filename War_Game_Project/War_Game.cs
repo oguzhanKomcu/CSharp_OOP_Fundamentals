@@ -36,16 +36,16 @@ namespace War_Game_Project
 
         private void btn_click(object? sender, EventArgs e)
         {
-            Button yakalanan = (Button)sender;
-            if (yakalanan.Name == "btnOnePlayer")
+            Button btnclick = (Button)sender;
+            if (btnclick.Name == "btnOnePlayer")
             {
-                yakalanan.BackColor = Color.AliceBlue;
+                btnclick.BackColor = Color.AliceBlue;
                 thisplayer = 1;
                 
             }
-            else if (yakalanan.Name == "btnTwoPlayer")
+            else if (btnclick.Name == "btnTwoPlayer")
             {
-                yakalanan.BackColor = Color.AliceBlue;
+                btnclick.BackColor = Color.AliceBlue;
                 thisplayer = 2;
             }
         }
