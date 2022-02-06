@@ -72,12 +72,13 @@ namespace War_Game_Project
         {
             int totalstrength = (userwrr.PS() + userwrr.RS() + userwrr.WS() + userwrr.TS() ) / 4;
             lblstrength1.Text = totalstrength.ToString();
-            lblstrength2.Text = userwrr.DL().ToString();
+            int DL = userwrr.DL();
+            lblstrength2.Text = DL.ToString();
             warrior2bell -= totalstrength;
             labelWarrior2health.Width = warrior2bell;
             
 
-            warrior1bell -= userwrr.DL();
+            warrior1bell -= DL;
             labelWarrior1Health.Width = warrior1bell;
            
             if (labelWarrior2health.Width <= 0)
