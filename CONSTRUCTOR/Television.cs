@@ -27,7 +27,7 @@ namespace CONSTRUCTOR
         //We did it without adding parameters to the constructor here.
         //This is actually a constructor that is assigned by default.
         //If we didn't do this, we made it with parameters and implemented it like this, "new class();" We would get an error.
-        //It asks us to enter the parameter.
+        //As a result, it necessarily , ıt asks us to enter the parameter.
         public Television()
         {
 
