@@ -63,11 +63,13 @@ namespace War_Game_Project
         private void btnFire1_Click(object sender, EventArgs e)
         {
             int totalstrength = (userwrr.PS() + userwrr.RS() + userwrr.WS() + userwrr.TS() ) / 4;
-
-            warrior2bell-= totalstrength;
+            lblstrength1.Text = totalstrength.ToString();
+            lblstrength2.Text = userwrr.DL().ToString();
+            warrior2bell -= totalstrength;
             labelWarrior2health.Width = warrior2bell;
+            
 
-            warrior1bell-= userwrr.DL();
+            warrior1bell -= userwrr.DL();
             labelWarrior1Health.Width = warrior1bell;
            
             if (labelWarrior2health.Width <= 0)

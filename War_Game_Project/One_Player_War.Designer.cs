@@ -58,6 +58,10 @@
             this.textBirtyear = new System.Windows.Forms.TextBox();
             this.textFirstName = new System.Windows.Forms.TextBox();
             this.timerWar1 = new System.Windows.Forms.Timer(this.components);
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblstrength1 = new System.Windows.Forms.Label();
+            this.lblstrength2 = new System.Windows.Forms.Label();
             this.groupBoxUserMilitary.SuspendLayout();
             this.groupBoxWAR.SuspendLayout();
             this.grpUserProfile.SuspendLayout();
@@ -218,6 +222,10 @@
             // 
             // groupBoxWAR
             // 
+            this.groupBoxWAR.Controls.Add(this.lblstrength2);
+            this.groupBoxWAR.Controls.Add(this.lblstrength1);
+            this.groupBoxWAR.Controls.Add(this.label8);
+            this.groupBoxWAR.Controls.Add(this.label7);
             this.groupBoxWAR.Controls.Add(this.btnFire1);
             this.groupBoxWAR.Controls.Add(this.label232);
             this.groupBoxWAR.Controls.Add(this.label12);
@@ -376,7 +384,42 @@
             // 
             this.timerWar1.Enabled = true;
             this.timerWar1.Interval = 5;
-
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(589, 53);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 21);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "STRENGTH :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(43, 53);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(100, 21);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "STRENGTH :";
+            // 
+            // lblstrength1
+            // 
+            this.lblstrength1.AutoSize = true;
+            this.lblstrength1.Location = new System.Drawing.Point(151, 44);
+            this.lblstrength1.Name = "lblstrength1";
+            this.lblstrength1.Size = new System.Drawing.Size(0, 32);
+            this.lblstrength1.TabIndex = 4;
+            // 
+            // lblstrength2
+            // 
+            this.lblstrength2.AutoSize = true;
+            this.lblstrength2.Location = new System.Drawing.Point(695, 44);
+            this.lblstrength2.Name = "lblstrength2";
+            this.lblstrength2.Size = new System.Drawing.Size(0, 32);
+            this.lblstrength2.TabIndex = 4;
             // 
             // One_Player_War
             // 
@@ -431,5 +474,9 @@
         private TextBox textBirtyear;
         private TextBox textFirstName;
         private System.Windows.Forms.Timer timerWar1;
+        private Label lblstrength2;
+        private Label lblstrength1;
+        private Label label8;
+        private Label label7;
     }
 }
