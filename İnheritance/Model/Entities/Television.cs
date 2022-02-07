@@ -11,7 +11,7 @@ namespace İnheritance.Model.Entities
         public string SmartTv { get; set; }
         public string DisplayTechnology { get; set; }
         public string Resolution { get; set; }
-        public string ScreenSize { get; set; }
+        public string Screen_Size { get; set; }
 
 
 
