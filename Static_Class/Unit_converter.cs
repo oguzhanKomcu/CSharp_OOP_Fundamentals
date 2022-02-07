@@ -10,7 +10,7 @@ namespace Static_Class
     //When creating a static class, we must write "static" in the class identifier to indicate that it is a static class.
     public static class Unit_converter
     {
-        //Its members must be strictly static.
+        //Its members must be strictly static..
         //public  static double+function_name+(type parametre)
         //You can create our own functions in the number of parameters we want within the framework of these rules.
         public static double KmToCmConverter(double km)
