@@ -8,7 +8,7 @@ namespace Static_Class
 {
 
     //When creating a static class, we must write "static" in the class identifier to indicate that it is a static class.
-    static class Unit_converter
+    public static class Unit_converter
     {
         //Its members must be strictly static.
         //public  static double+function_name+(type parametre)
