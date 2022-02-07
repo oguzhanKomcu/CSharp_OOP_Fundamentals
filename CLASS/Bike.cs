@@ -15,7 +15,7 @@ namespace CLASS
         //If I have both public and private fields in the class, this class is now internal and it defines it directly by default.
         //It can also be added to the access modifier of the class if desired.
 
-        string a; //This field is no longer accessible from the outside.
+        string a; //This field is no longer accessible from the outside...
 
         public string Brand;
         public int RimSize;
