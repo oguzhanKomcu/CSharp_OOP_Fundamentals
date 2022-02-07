@@ -9,7 +9,7 @@ namespace CONSTRUCTOR
     class Television
     {
 
-        //Property = Property combines fields and methods.It consists of two code blocks. These are the get and set methods.By controlling the get and set methods, we can control the received data under the conditions we want.
+        //Property = Property combines fields and methods..It consists of two code blocks. These are the get and set methods.By controlling the get and set methods, we can control the received data under the conditions we want.
 
 
         //Shortcut = prop+tab+tab
