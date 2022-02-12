@@ -221,7 +221,7 @@ namespace WarGame_Project
                     war = characterRepository.GetById(idwar);
                     lblWar3Health1user.Width = 0;
                     lblWar3Health2userr.Width -= characterRepository.DL(war);
-                    MessageBox.Show($"{user.NickName} YOU DID AND LOSE !! ");
+                    MessageBox.Show($"{user.NickName} YOU DID AND LOSE ! ");
                     lblRaund3.Text = "COMPUTER";
                     grpWar3.Visible = false;
                     point2 += 100;
