@@ -100,5 +100,10 @@ namespace WarGame_Project
           UserRepository repository = new UserRepository();
             dataGridView2profile.DataSource = repository.GetAll();
         }
+
+        private void _2User_Registration_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

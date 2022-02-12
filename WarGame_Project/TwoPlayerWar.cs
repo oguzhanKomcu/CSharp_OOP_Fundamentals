@@ -289,5 +289,10 @@ namespace WarGame_Project
 
             }
         }
+
+        private void TwoPlayerWar_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

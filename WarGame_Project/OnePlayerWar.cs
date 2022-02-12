@@ -307,5 +307,10 @@ namespace WarGame_Project
         {
 
         }
+
+        private void OnePlayerWar_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

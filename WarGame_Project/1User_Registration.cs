@@ -106,5 +106,10 @@ namespace WarGame_Project
             settings.Show();
             this.Hide();
         }
+
+        private void _1User_Registration_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit(); 
+        }
     }
 }

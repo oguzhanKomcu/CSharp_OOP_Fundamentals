@@ -279,6 +279,7 @@
             this.Controls.Add(this.grpDeleteCharacter);
             this.Name = "Character_Settings";
             this.Text = "Character_Settings";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Character_Settings_FormClosing);
             this.Load += new System.EventHandler(this.Character_Settings_Load);
             this.grpDeleteCharacter.ResumeLayout(false);
             this.grpDeleteCharacter.PerformLayout();

@@ -468,6 +468,7 @@
             this.Controls.Add(this.groupBoxWAR1);
             this.Name = "OnePlayerWar";
             this.Text = "OnePlayerWar";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnePlayerWar_FormClosing);
             this.Load += new System.EventHandler(this.OnePlayerWar_Load);
             this.grpWar2.ResumeLayout(false);
             this.grpWar2.PerformLayout();

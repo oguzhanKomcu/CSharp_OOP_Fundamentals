@@ -71,5 +71,10 @@ namespace WarGame_Project
             start_Screen.Show();
             this.Hide();
         }
+
+        private void User_Settings_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

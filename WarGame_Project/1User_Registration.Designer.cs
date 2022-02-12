@@ -377,6 +377,7 @@
             this.Controls.Add(this.groupBoxUserMilitary);
             this.Name = "_1User_Registration";
             this.Text = "1_Player";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this._1User_Registration_FormClosing);
             this.Load += new System.EventHandler(this._1User_Registration_Load);
             this.grpUserProfile.ResumeLayout(false);
             this.grpUserProfile.PerformLayout();

@@ -60,5 +60,10 @@ namespace WarGame_Project
             form.Show();
             this.Hide();
         }
+
+        private void _2PLAYERS_SELECTING_A__CHARACTER_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

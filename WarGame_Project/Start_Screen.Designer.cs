@@ -120,6 +120,7 @@
             this.Controls.Add(this.panelLoading);
             this.Name = "Start_Screen";
             this.Text = "Start_Screen";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Start_Screen_FormClosing);
             this.Load += new System.EventHandler(this.Start_Screen_Load);
             this.groupBoxStart.ResumeLayout(false);
             this.ResumeLayout(false);

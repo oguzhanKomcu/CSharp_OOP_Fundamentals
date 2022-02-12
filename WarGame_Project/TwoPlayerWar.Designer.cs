@@ -515,6 +515,7 @@
             this.Controls.Add(this.groupBoxWAR1);
             this.Name = "TwoPlayerWar";
             this.Text = "TwoPlayerWar";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TwoPlayerWar_FormClosing);
             this.Load += new System.EventHandler(this.TwoPlayerWar_Load);
             this.groupBoxWAR1.ResumeLayout(false);
             this.groupBoxWAR1.PerformLayout();

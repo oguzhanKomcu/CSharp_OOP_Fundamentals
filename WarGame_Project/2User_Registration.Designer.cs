@@ -304,6 +304,7 @@
             this.Controls.Add(this.grpUser1Profile);
             this.Name = "_2User_Registration";
             this.Text = "_2User_Registration";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this._2User_Registration_FormClosing);
             this.Load += new System.EventHandler(this._2User_Registration_Load);
             this.grpUser2Profil.ResumeLayout(false);
             this.grpUser2Profil.PerformLayout();

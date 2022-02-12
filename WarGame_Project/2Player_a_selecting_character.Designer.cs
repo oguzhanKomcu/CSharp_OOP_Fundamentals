@@ -365,6 +365,7 @@
             this.Controls.Add(this.groupBoxWarrior1);
             this.Name = "_2PLAYERS_SELECTING_A__CHARACTER";
             this.Text = "_2Player_a_selecting_character";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this._2PLAYERS_SELECTING_A__CHARACTER_FormClosing);
             this.Load += new System.EventHandler(this._2PLAYERS_SELECTING_A__CHARACTER_Load);
             this.groupBoxWarrior2.ResumeLayout(false);
             this.groupBoxWarrior2.PerformLayout();

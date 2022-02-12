@@ -184,6 +184,7 @@
             this.Controls.Add(this.grpUserUpdate);
             this.Name = "User_Settings";
             this.Text = "User_Settings";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.User_Settings_FormClosing);
             this.Load += new System.EventHandler(this.User_Settings_Load);
             this.grpUserUpdate.ResumeLayout(false);
             this.grpUserUpdate.PerformLayout();
