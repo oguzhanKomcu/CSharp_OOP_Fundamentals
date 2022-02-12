@@ -18,15 +18,15 @@ namespace WarGame_Project
         {
             InitializeComponent();
         }
-
+          WarCharacterRepository characterRepository1 = new WarCharacterRepository();
         private void _2PLAYERS_SELECTING_A__CHARACTER_Load(object sender, EventArgs e)
         {
-
+            dataGridView2usercharacter.DataSource = characterRepository1.GetAll();
         }
 
         private void btnSelected1_Click(object sender, EventArgs e)
         {
-            WarCharacterRepository characterRepository1 = new WarCharacterRepository();
+        
             WarCharacter character1 = new WarCharacter();
             character1.Id = 2;
             character1.Rank = comboBoxRank1user.Text;

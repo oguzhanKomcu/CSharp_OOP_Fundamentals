@@ -95,6 +95,7 @@
             this.btnRegulation2.TabIndex = 4;
             this.btnRegulation2.Text = "REGULATİON";
             this.btnRegulation2.UseVisualStyleBackColor = true;
+            this.btnRegulation2.Click += new System.EventHandler(this.btnRegulation2_Click);
             // 
             // btnRegister2user
             // 
@@ -202,6 +203,7 @@
             this.btnRegulationUser1.TabIndex = 11;
             this.btnRegulationUser1.Text = "REGULATİON";
             this.btnRegulationUser1.UseVisualStyleBackColor = true;
+            this.btnRegulationUser1.Click += new System.EventHandler(this.btnRegulationUser1_Click);
             // 
             // label11
             // 
@@ -274,10 +276,10 @@
             // dataGridView2profile
             // 
             this.dataGridView2profile.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2profile.Location = new System.Drawing.Point(69, 399);
+            this.dataGridView2profile.Location = new System.Drawing.Point(22, 399);
             this.dataGridView2profile.Name = "dataGridView2profile";
             this.dataGridView2profile.RowTemplate.Height = 25;
-            this.dataGridView2profile.Size = new System.Drawing.Size(867, 256);
+            this.dataGridView2profile.Size = new System.Drawing.Size(1075, 256);
             this.dataGridView2profile.TabIndex = 10;
             // 
             // btnCharacterSelected
@@ -302,6 +304,7 @@
             this.Controls.Add(this.grpUser1Profile);
             this.Name = "_2User_Registration";
             this.Text = "_2User_Registration";
+            this.Load += new System.EventHandler(this._2User_Registration_Load);
             this.grpUser2Profil.ResumeLayout(false);
             this.grpUser2Profil.PerformLayout();
             this.grpUser1Profile.ResumeLayout(false);

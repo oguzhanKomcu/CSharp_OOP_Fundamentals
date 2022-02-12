@@ -89,6 +89,7 @@
             this.btnREGULATİON1.TabIndex = 4;
             this.btnREGULATİON1.Text = "REGULATİON";
             this.btnREGULATİON1.UseVisualStyleBackColor = true;
+            this.btnREGULATİON1.Click += new System.EventHandler(this.btnREGULATİON1_Click);
             // 
             // btnRegister
             // 
@@ -200,6 +201,7 @@
             this.btnREGULATİON2.TabIndex = 4;
             this.btnREGULATİON2.Text = "REGULATİON";
             this.btnREGULATİON2.UseVisualStyleBackColor = true;
+            this.btnREGULATİON2.Click += new System.EventHandler(this.btnREGULATİON2_Click);
             // 
             // comboBoxDL
             // 
@@ -339,7 +341,7 @@
             this.dataGridViewUserProfil.Location = new System.Drawing.Point(57, 330);
             this.dataGridViewUserProfil.Name = "dataGridViewUserProfil";
             this.dataGridViewUserProfil.RowTemplate.Height = 25;
-            this.dataGridViewUserProfil.Size = new System.Drawing.Size(1024, 162);
+            this.dataGridViewUserProfil.Size = new System.Drawing.Size(1097, 162);
             this.dataGridViewUserProfil.TabIndex = 6;
             // 
             // dataGridViewMilitary
@@ -348,7 +350,7 @@
             this.dataGridViewMilitary.Location = new System.Drawing.Point(57, 510);
             this.dataGridViewMilitary.Name = "dataGridViewMilitary";
             this.dataGridViewMilitary.RowTemplate.Height = 25;
-            this.dataGridViewMilitary.Size = new System.Drawing.Size(1024, 157);
+            this.dataGridViewMilitary.Size = new System.Drawing.Size(1097, 157);
             this.dataGridViewMilitary.TabIndex = 7;
             // 
             // btnStartFighting

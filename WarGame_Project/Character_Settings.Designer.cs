@@ -29,8 +29,13 @@
         private void InitializeComponent()
         {
             this.grpDeleteCharacter = new System.Windows.Forms.GroupBox();
+            this.btnDeleteCharacter = new System.Windows.Forms.Button();
+            this.textIdDelete = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.grpUpdateCharacter = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnUpdateCharacter = new System.Windows.Forms.Button();
+            this.textIdUpdate = new System.Windows.Forms.TextBox();
+            this.btnFindUpdate = new System.Windows.Forms.Button();
             this.comboBoxTalent = new System.Windows.Forms.ComboBox();
             this.comboBoxPhysics = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -38,15 +43,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxRank = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnFindUpdate = new System.Windows.Forms.Button();
-            this.btnFind = new System.Windows.Forms.Button();
-            this.textIdUpdate = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnUpdateCharacter = new System.Windows.Forms.Button();
-            this.textIdDelete = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnDeleteCharacter = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnBACK = new System.Windows.Forms.Button();
             this.grpDeleteCharacter.SuspendLayout();
             this.grpUpdateCharacter.SuspendLayout();
@@ -57,7 +56,6 @@
             // 
             this.grpDeleteCharacter.Controls.Add(this.btnDeleteCharacter);
             this.grpDeleteCharacter.Controls.Add(this.textIdDelete);
-            this.grpDeleteCharacter.Controls.Add(this.btnFind);
             this.grpDeleteCharacter.Controls.Add(this.label6);
             this.grpDeleteCharacter.Location = new System.Drawing.Point(539, 56);
             this.grpDeleteCharacter.Name = "grpDeleteCharacter";
@@ -65,7 +63,33 @@
             this.grpDeleteCharacter.TabIndex = 0;
             this.grpDeleteCharacter.TabStop = false;
             this.grpDeleteCharacter.Text = "DELETE CHARACTER";
-
+            // 
+            // btnDeleteCharacter
+            // 
+            this.btnDeleteCharacter.Location = new System.Drawing.Point(129, 123);
+            this.btnDeleteCharacter.Name = "btnDeleteCharacter";
+            this.btnDeleteCharacter.Size = new System.Drawing.Size(140, 48);
+            this.btnDeleteCharacter.TabIndex = 13;
+            this.btnDeleteCharacter.Text = "DELETE";
+            this.btnDeleteCharacter.UseVisualStyleBackColor = true;
+            this.btnDeleteCharacter.Click += new System.EventHandler(this.btnDeleteCharacter_Click);
+            // 
+            // textIdDelete
+            // 
+            this.textIdDelete.Location = new System.Drawing.Point(129, 72);
+            this.textIdDelete.Name = "textIdDelete";
+            this.textIdDelete.Size = new System.Drawing.Size(140, 23);
+            this.textIdDelete.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(76, 74);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(32, 21);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "ID :";
             // 
             // grpUpdateCharacter
             // 
@@ -88,14 +112,32 @@
             this.grpUpdateCharacter.TabStop = false;
             this.grpUpdateCharacter.Text = "UPDATE CHARACTER";
             // 
-            // dataGridView1
+            // btnUpdateCharacter
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 369);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1093, 296);
-            this.dataGridView1.TabIndex = 1;
+            this.btnUpdateCharacter.Location = new System.Drawing.Point(99, 254);
+            this.btnUpdateCharacter.Name = "btnUpdateCharacter";
+            this.btnUpdateCharacter.Size = new System.Drawing.Size(159, 40);
+            this.btnUpdateCharacter.TabIndex = 13;
+            this.btnUpdateCharacter.Text = "UPDATE";
+            this.btnUpdateCharacter.UseVisualStyleBackColor = true;
+            this.btnUpdateCharacter.Click += new System.EventHandler(this.btnUpdateCharacter_Click);
+            // 
+            // textIdUpdate
+            // 
+            this.textIdUpdate.Location = new System.Drawing.Point(136, 57);
+            this.textIdUpdate.Name = "textIdUpdate";
+            this.textIdUpdate.Size = new System.Drawing.Size(53, 23);
+            this.textIdUpdate.TabIndex = 12;
+            // 
+            // btnFindUpdate
+            // 
+            this.btnFindUpdate.Location = new System.Drawing.Point(195, 57);
+            this.btnFindUpdate.Name = "btnFindUpdate";
+            this.btnFindUpdate.Size = new System.Drawing.Size(52, 25);
+            this.btnFindUpdate.TabIndex = 11;
+            this.btnFindUpdate.Text = "FİND";
+            this.btnFindUpdate.UseVisualStyleBackColor = true;
+            this.btnFindUpdate.Click += new System.EventHandler(this.btnFindUpdate_Click);
             // 
             // comboBoxTalent
             // 
@@ -186,42 +228,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Weapon : ";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(63, 93);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 21);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Rank :";
-
-            // 
-            // btnFindUpdate
-            // 
-            this.btnFindUpdate.Location = new System.Drawing.Point(195, 57);
-            this.btnFindUpdate.Name = "btnFindUpdate";
-            this.btnFindUpdate.Size = new System.Drawing.Size(52, 25);
-            this.btnFindUpdate.TabIndex = 11;
-            this.btnFindUpdate.Text = "FİND";
-            this.btnFindUpdate.UseVisualStyleBackColor = true;
-            // 
-            // btnFind
-            // 
-            this.btnFind.Location = new System.Drawing.Point(129, 101);
-            this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(140, 34);
-            this.btnFind.TabIndex = 11;
-            this.btnFind.Text = "FİND";
-            this.btnFind.UseVisualStyleBackColor = true;
-            // 
-            // textIdUpdate
-            // 
-            this.textIdUpdate.Location = new System.Drawing.Point(136, 57);
-            this.textIdUpdate.Name = "textIdUpdate";
-            this.textIdUpdate.Size = new System.Drawing.Size(53, 23);
-            this.textIdUpdate.TabIndex = 12;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -231,43 +237,25 @@
             this.label1.Size = new System.Drawing.Size(32, 21);
             this.label1.TabIndex = 6;
             this.label1.Text = "ID :";
-
             // 
-            // btnUpdateCharacter
+            // label2
             // 
-            this.btnUpdateCharacter.Location = new System.Drawing.Point(99, 254);
-            this.btnUpdateCharacter.Name = "btnUpdateCharacter";
-            this.btnUpdateCharacter.Size = new System.Drawing.Size(159, 40);
-            this.btnUpdateCharacter.TabIndex = 13;
-            this.btnUpdateCharacter.Text = "UPDATE";
-            this.btnUpdateCharacter.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(63, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 21);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Rank :";
             // 
-            // textIdDelete
+            // dataGridView1
             // 
-            this.textIdDelete.Location = new System.Drawing.Point(129, 72);
-            this.textIdDelete.Name = "textIdDelete";
-            this.textIdDelete.Size = new System.Drawing.Size(140, 23);
-            this.textIdDelete.TabIndex = 12;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(76, 74);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 21);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "ID :";
-
-            // 
-            // btnDeleteCharacter
-            // 
-            this.btnDeleteCharacter.Location = new System.Drawing.Point(129, 165);
-            this.btnDeleteCharacter.Name = "btnDeleteCharacter";
-            this.btnDeleteCharacter.Size = new System.Drawing.Size(140, 48);
-            this.btnDeleteCharacter.TabIndex = 13;
-            this.btnDeleteCharacter.Text = "DELETE";
-            this.btnDeleteCharacter.UseVisualStyleBackColor = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 369);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(1155, 296);
+            this.dataGridView1.TabIndex = 1;
             // 
             // btnBACK
             // 
@@ -278,6 +266,7 @@
             this.btnBACK.TabIndex = 2;
             this.btnBACK.Text = "BACK";
             this.btnBACK.UseVisualStyleBackColor = true;
+            this.btnBACK.Click += new System.EventHandler(this.btnBACK_Click);
             // 
             // Character_Settings
             // 
@@ -290,6 +279,7 @@
             this.Controls.Add(this.grpDeleteCharacter);
             this.Name = "Character_Settings";
             this.Text = "Character_Settings";
+            this.Load += new System.EventHandler(this.Character_Settings_Load);
             this.grpDeleteCharacter.ResumeLayout(false);
             this.grpDeleteCharacter.PerformLayout();
             this.grpUpdateCharacter.ResumeLayout(false);
@@ -307,7 +297,6 @@
         private DataGridView dataGridView2;
         private Button btnDeleteCharacter;
         private TextBox textIdDelete;
-        private Button btnFind;
         private Label label6;
         private Button btnUpdateCharacter;
         private TextBox textIdUpdate;

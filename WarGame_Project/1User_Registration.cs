@@ -79,16 +79,31 @@ namespace WarGame_Project
             
 
         }
-
+        UserRepository repository = new UserRepository();
         private void _1User_Registration_Load(object sender, EventArgs e)
         {
-          
+            dataGridViewUserProfil.DataSource = repository.GetAll();
+            dataGridViewMilitary.DataSource = repository.GetAll();
         }
 
         private void btnStartFighting_Click(object sender, EventArgs e)
         {
             OnePlayerWar  one_Player_War = new OnePlayerWar();     
             one_Player_War.Show();
+            this.Hide();
+        }
+
+        private void btnREGULATİON1_Click(object sender, EventArgs e)
+        {
+            User_Settings user_Settings = new User_Settings();
+            user_Settings.Show();
+            this.Hide();
+        }
+
+        private void btnREGULATİON2_Click(object sender, EventArgs e)
+        {
+            Character_Settings settings = new Character_Settings(); 
+            settings.Show();
             this.Hide();
         }
     }

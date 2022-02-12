@@ -47,9 +47,14 @@ namespace WarGame_Project.Business.Repositories.Concrete
 
         public override void Update(User entity)
         {
-            User user = new User(); 
+
+     
+            User user = GetById(entity.Id);
+
          
             user.NickName = entity.NickName;    
+            user.UpdateDate = DateTime.Now;
+            user.Status = Status.Modified;
 
         }
     }

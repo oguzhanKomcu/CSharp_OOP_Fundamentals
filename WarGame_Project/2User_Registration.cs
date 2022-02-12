@@ -80,5 +80,25 @@ namespace WarGame_Project
             form.Show();
             this.Hide();
         }
+
+        private void btnRegulationUser1_Click(object sender, EventArgs e)
+        {
+            User_Settings user_Settings = new User_Settings();
+            user_Settings.Show();
+            this.Hide();
+        }
+
+        private void btnRegulation2_Click(object sender, EventArgs e)
+        {
+            User_Settings user_Settings = new User_Settings();
+            user_Settings.Show();
+            this.Hide();
+        }
+
+        private void _2User_Registration_Load(object sender, EventArgs e)
+        {
+          UserRepository repository = new UserRepository();
+            dataGridView2profile.DataSource = repository.GetAll();
+        }
     }
 }
