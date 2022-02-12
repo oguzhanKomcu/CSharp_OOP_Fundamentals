@@ -67,6 +67,7 @@
             this.grpUser1Profile.TabIndex = 4;
             this.grpUser1Profile.TabStop = false;
             this.grpUser1Profile.Text = "User 1 Profile";
+            this.grpUser1Profile.Enter += new System.EventHandler(this.grpUser1Profile_Enter);
             // 
             // label11
             // 
@@ -152,6 +153,7 @@
             this.grpUser2Profil.TabIndex = 5;
             this.grpUser2Profil.TabStop = false;
             this.grpUser2Profil.Text = "User 2 Profile";
+            this.grpUser2Profil.Enter += new System.EventHandler(this.grpUser2Profil_Enter);
             // 
             // label2
             // 

@@ -55,5 +55,15 @@ namespace War_Game_Project
         {
             Application.Exit();
         }
+
+        private void grpUser2Profil_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpUser1Profile_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

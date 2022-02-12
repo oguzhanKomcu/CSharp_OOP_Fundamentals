@@ -29,7 +29,10 @@
             bike1.color = textColor.Text;
             bike1.Gear = Convert.ToInt32(textGear.Text);
 
-            MessageBox.Show($"Brand : {bike1.Brand }\nRim Size : {bike1.RimSize}\nMaterial : {bike1.Material}\nColor : {bike1.color}\nGender : {bike1.Gender}\nType : {bike1.Type}\nGear : {bike1.Gear}\nPrice : {bike1.Price} ");
+
+
+
+            MessageBox.Show($"Brand : {bike1.Brand }\nRim Size : {bike1.RimSize}\nMaterial : {bike1.Material}\nColor : {bike1.color}\nGender : {bike1.Gender}\nType : {bike1.Type}\nGear : {bike1.Gear}\nPrice : {bike1.Price}  ");
         }
     }
 }

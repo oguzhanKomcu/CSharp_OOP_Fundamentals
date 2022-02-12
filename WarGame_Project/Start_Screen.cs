@@ -1,39 +1,45 @@
-namespace War_Game_Project
+namespace WarGame_Project
 {
-    public partial class War_Game : Form
+    public partial class Start_Screen : Form
     {
-        public War_Game()
+        public Start_Screen()
         {
             InitializeComponent();
         }
 
-        private void War_Game_Load(object sender, EventArgs e)
-        {
-            
-        }
         int thisplayer;
 
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void War_Game_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //First, we create a loading place with the panel and we determine the amount of increase of this width.
+            Application.Exit();
+        }
+
+        private void btnTwoPlayer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Start_Screen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1SplashScreen_Tick(object sender, EventArgs e)
+        {
             panelLoading.Width += 1;
-            //We condition our width based on a certain number.
+
             if (panelLoading.Width > 350)
             {
-                //After the condition is fulfilled, we stop the clock. If we do not do this, it repeats constantly, the ram fills up and our computer shuts down.
-                timer1SplashScreen.Stop(); // <= be careful
-                //Then you can type the commands you want.
+
+                timer1SplashScreen.Stop();
                 groupBoxStart.Visible = true;
                 foreach (Button btn in groupBoxStart.Controls)
                 {
                     btn.Click += new EventHandler(btn_click);
                 }
             }
-            
-
         }
-
         private void btn_click(object? sender, EventArgs e)
         {
             Button btnclick = (Button)sender;
@@ -51,31 +57,20 @@ namespace War_Game_Project
                 btnOnePlayer.BackColor = Color.Salmon;
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (thisplayer == 1)
             {
-                One_Player_War one = new One_Player_War();
+                _1User_Registration one = new _1User_Registration();
                 one.Show();
                 this.Hide();
             }
             else if (thisplayer == 2)
             {
-                _2playerUser usertwo = new _2playerUser();
-                usertwo.Show();
+                _2User_Registration two = new _2User_Registration();
+                two.Show();
                 this.Hide();
             }
-
-        }
-
-        private void War_Game_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnTwoPlayer_Click(object sender, EventArgs e)
-        {
 
         }
     }

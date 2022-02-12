@@ -61,7 +61,7 @@ namespace War_Game_Project
             lblstrength1.Text = totalstrength.ToString();
             warrior2bell -= totalstrength;
             labeluUSER2HEALTH.Width = warrior2bell;
-            if (warrior1bell <= 0)
+            if (warrior2bell <= 0)
             {
 
                 MessageBox.Show($"{_2playerUser.user1NickName.ToString()} KİLLED !!. YOU WİNN ");
@@ -72,7 +72,8 @@ namespace War_Game_Project
 
         private void btnFiree2_Click(object sender, EventArgs e)
         {
-            int totalstrength = (userwrr2.PS() + userwrr2.RS() + userwrr2.WS() + userwrr2.TS()) / 4;
+            int totalstrength = (userwrr1.PS() + userwrr1.RS() + userwrr1.WS() + userwrr1.TS()) / 4;
+            lblstrength1.Text = totalstrength.ToString();
             lblstrength2.Text = totalstrength.ToString();
             warrior1bell -= totalstrength;
             labeluUSER1HEALTH.Width = warrior1bell;
