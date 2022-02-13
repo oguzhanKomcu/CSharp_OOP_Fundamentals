@@ -31,7 +31,7 @@ namespace WarGame_Project
                 user1.Id = 2;
                 user1.LastName = textLastNameUser1.Text;
 
-                if(Utilities.Nicknamecontrol(textNickNameUser1) == true)
+                if(Utilities.Nicknamecontrol(textNickNameUser1) == false)
                 {
                     user1.NickName = textNickNameUser1.Text;
                     DateTime now = DateTime.Now;
@@ -62,7 +62,7 @@ namespace WarGame_Project
                 user2.Id = 3;
                 user2.LastName = textLastNameUser2.Text;
 
-                if (Utilities.Nicknamecontrol(textNickNameUser2) == true)
+                if (Utilities.Nicknamecontrol(textNickNameUser2) == false)
                 {
                     user2.NickName = textNickNameUser2.Text;
                     DateTime now = DateTime.Now;

@@ -73,6 +73,7 @@ namespace WarGame_Project
             int user1id = 2;
             user1 = userRepository.GetById(user1id);
             user2 = userRepository.GetById(user2id);
+
             lblHealthUser1.Text = user1.NickName + " " + "HEALTH";
             lblHealthUser2.Text = user2.NickName + " " + "HEALTH";
             lblHealthUser3.Text = user1.NickName + " " + "HEALTH";
