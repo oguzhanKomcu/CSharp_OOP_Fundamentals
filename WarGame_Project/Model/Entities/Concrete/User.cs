@@ -9,10 +9,12 @@ using WarGame_Project.Business.Utilities;
 
 namespace WarGame_Project.Model.Entities.Concrete
 {
-    public  class User : BaseEntity<int>
+    public class User : BaseEntity<int>
     {
 
+
         public override int Id { get; set; }    
+        
         public string FirstName { get; set; }
         public string LastName { get; set; }
 

@@ -9,7 +9,7 @@ namespace WarGame_Project.Model.Entities.Concrete
 {
     public class WarCharacter : BaseEntity<int>
     {
-
+        public override int Id { get; set; }
         public string Rank { get; set; }
         public string Weapon { get; set; }
         public string Physic { get; set; }
@@ -17,6 +17,8 @@ namespace WarGame_Project.Model.Entities.Concrete
 
        
         public string Diffucality_Level { get; set; }
-        public override int Id { get; set; }
+        public DateTime? UpdateDate { get; internal set; }
+        public DateTime? DeleteDate { get; internal set; }
+
     }
 }

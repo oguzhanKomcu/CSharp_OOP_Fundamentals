@@ -21,7 +21,7 @@ namespace WarGame_Project
         User user1 = new User();
         UserRepository userRepository = new UserRepository();
         WarCharacter character = new WarCharacter();    
-        List<WarCharacter> character1 = FakeDatas.warCharacters.ToList();
+
 
 
         public _1User_Registration()
@@ -29,56 +29,36 @@ namespace WarGame_Project
             InitializeComponent();
         }
 
-        
-
-     
         private void btnRegister_Click(object sender, EventArgs e)
         {
             if (Utilities.TextControl(grpUserProfile) == false)
             {
-                 
-                user1.Id = 2; 
+
+                user1.Id = 2;
                 user1.FirstName = textFirstName.Text;
-                user1.LastName = textLastName.Text; 
-                user1.NickName = textNickName.Text;
+                user1.LastName = textLastName.Text;
 
-                foreach (User tim in FakeDatas.users)
+
+                if (Utilities.Nicknamecontrol(textNickName) == false)
                 {
-
-                    if (tim.NickName == textNickName.Text)
+                    user1.NickName = textNickName.Text;
+                    DateTime now = DateTime.Now;
+                    user1.Age = now.Year - int.Parse(textBirtyear.Text);
+                    if (user1.Age > 18)
                     {
-                        MessageBox.Show("This username is a compliment.");
-                        textNickName.Text = String.Empty;   
-
-                    }
-                    else
-                    {
-                        user1.NickName = textNickName.Text;
+                        groupBoxUserMilitary.Visible = true;
                     }
 
 
+                    userRepository.Create(user1);
+
+                    dataGridViewUserProfil.DataSource = userRepository.GetAll();
+
                 }
-
-                DateTime now = DateTime.Now;
-                user1.Age = now.Year - int.Parse(textBirtyear.Text);
-                if (user1.Age > 18)
-                {
-                    groupBoxUserMilitary.Visible = true;
-                }
-
-
-                userRepository.Create(user1);
-
-                dataGridViewUserProfil.DataSource = userRepository.GetAll();
+               
             }
 
-        
- 
         }
-
-        
-       
-      
         private void btnSelected1_Click(object sender, EventArgs e)
         {
 
@@ -98,11 +78,11 @@ namespace WarGame_Project
             
 
         }
-        UserRepository repository = new UserRepository();
+       
         private void _1User_Registration_Load(object sender, EventArgs e)
         {
-            dataGridViewUserProfil.DataSource = repository.GetAll();
-            dataGridViewMilitary.DataSource = repository.GetAll();
+            dataGridViewUserProfil.DataSource = userRepository.GetAll();
+            dataGridViewMilitary.DataSource = characterRepository.GetAll();
         }
 
         private void btnStartFighting_Click(object sender, EventArgs e)

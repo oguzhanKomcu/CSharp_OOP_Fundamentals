@@ -31,43 +31,28 @@ namespace WarGame_Project
                 user1.Id = 2;
                 user1.LastName = textLastNameUser1.Text;
 
-                foreach (User tim in FakeDatas.users)
+                if(Utilities.Nicknamecontrol(textNickNameUser1) == true)
                 {
-
-                    if (tim.NickName == textNickNameUser1.Text)
+                    user1.NickName = textNickNameUser1.Text;
+                    DateTime now = DateTime.Now;
+                    user1.Age = now.Year - int.Parse(textBirtyearUser1.Text);
+                    if (user1.Age > 18)
                     {
-                        MessageBox.Show("This username is a compliment.");
-                        textNickNameUser1.Text = String.Empty;
-
-
-                    }
-                    else
-                    {
-                        user1.NickName = textNickNameUser1.Text;
-
+                        grpUser1Profile.Visible = true;
                     }
 
-
-                    
-                }
-                DateTime now = DateTime.Now;
-                user1.Age = now.Year - int.Parse(textBirtyearUser1.Text);
-                if (user1.Age > 18)
-                {
-                    grpUser1Profile.Visible = true;
-
+                    userRepository.Create(user1);
+                    dataGridView2profile.DataSource = userRepository.GetAll();
 
                 }
-
-                userRepository.Create(user1);
-                dataGridView2profile.DataSource = userRepository.GetAll();
-
+ 
             }
 
         }
 
         private void btnRegister2user_Click(object sender, EventArgs e)
         {
+
 
             if (Utilities.TextControl(grpUser2Profil) == false)
             {
@@ -76,35 +61,24 @@ namespace WarGame_Project
                 user2.FirstName = textFirstNameUser2.Text;
                 user2.Id = 3;
                 user2.LastName = textLastNameUser2.Text;
-                foreach (User tim in FakeDatas.users)
+
+                if (Utilities.Nicknamecontrol(textNickNameUser2) == true)
                 {
-
-                    if (tim.NickName == textNickNameUser2.Text)
+                    user2.NickName = textNickNameUser2.Text;
+                    DateTime now = DateTime.Now;
+                    user2.Age = now.Year - int.Parse(textBirtYearUser2.Text);
+                    if (user2.Age > 18)
                     {
-                        MessageBox.Show("This username is a compliment.");
-                        textNickNameUser2.Text = String.Empty;
+                        grpUser2Profil.Visible = true;
+
+
                     }
-                    else
-                    {
-                        user2.NickName = textNickNameUser2.Text;
-                       
-                       
-                    }
-                }
 
-
-                DateTime now = DateTime.Now;
-
-                user2.Age = now.Year - int.Parse(textBirtYearUser2.Text);
-                if (user2.Age > 18)
-                {
-                    grpUser1Profile.Visible = true;
-
+                    userRepository.Create(user2);
+                    dataGridView2profile.DataSource = userRepository.GetAll();
 
                 }
 
-                userRepository.Create(user2);
-                 dataGridView2profile.DataSource = userRepository.GetAll();
             }
         }
 

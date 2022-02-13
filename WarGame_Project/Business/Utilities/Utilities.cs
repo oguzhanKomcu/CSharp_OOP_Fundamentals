@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WarGame_Project.Business.Data;
 
 namespace WarGame_Project.Business.Utilities
 {
@@ -55,6 +56,26 @@ namespace WarGame_Project.Business.Utilities
             return result;
         }
 
+
+        public static bool Nicknamecontrol(TextBox nickname )
+        {
+
+            
+            bool resault = false;   
+            
+
+            foreach (var item in FakeDatas.users)
+            {
+                if(nickname.Text == item.NickName )
+                {
+                    MessageBox.Show("This username is a compliment.");
+                    nickname.Text =String.Empty;    
+                    resault = true;
+                }
+               
+            }
+            return  resault;    
+        }
 
 
 
