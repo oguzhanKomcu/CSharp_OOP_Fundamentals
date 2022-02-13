@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WarGame_Project.Business.Repositories.Concrete;
+using WarGame_Project.Business.Utilities;
 using WarGame_Project.Model.Entities.Concrete;
 
 namespace WarGame_Project
@@ -26,15 +27,19 @@ namespace WarGame_Project
 
         private void btnSelected1_Click(object sender, EventArgs e)
         {
-        
-            WarCharacter character1 = new WarCharacter();
-            character1.Id = 2;
-            character1.Rank = comboBoxRank1user.Text;
-            character1.Weapon = comboBoxWeapon1user.Text;
-            character1.Physic = comboBoxPhysics1user.Text;
-            character1.Talent = comboBoxTalent1user.Text;
+            if (Utilities.TextControl(groupBoxWarrior1) == false)
+            {
+                WarCharacter character1 = new WarCharacter();
+                character1.Id = 2;
+                character1.Rank = comboBoxRank1user.Text;
+                character1.Weapon = comboBoxWeapon1user.Text;
+                character1.Physic = comboBoxPhysics1user.Text;
+                character1.Talent = comboBoxTalent1user.Text;
 
-            characterRepository1.Create(character1);
+                characterRepository1.Create(character1);
+
+            }
+            
 
 
 
@@ -42,16 +47,25 @@ namespace WarGame_Project
 
         private void btnSelect2_Click(object sender, EventArgs e)
         {
-            WarCharacterRepository characterRepository2 = new WarCharacterRepository();
-            WarCharacter character2 = new WarCharacter();
-            character2.Id = 3;
-            character2.Rank = comboBoxRank2user.Text;
-            character2.Weapon = comboBoxWeapon2user.Text;
-            character2.Physic = comboBoxPhysics2user.Text;
-            character2.Talent = comboBoxTalent2user.Text;
+            if (Utilities.TextControl(groupBoxWarrior1) == false)
+            {
+                WarCharacterRepository characterRepository2 = new WarCharacterRepository();
+                WarCharacter character2 = new WarCharacter();
+                character2.Id = 3;
+                character2.Rank = comboBoxRank2user.Text;
+                character2.Weapon = comboBoxWeapon2user.Text;
+                character2.Physic = comboBoxPhysics2user.Text;
+                character2.Talent = comboBoxTalent2user.Text;
 
-            characterRepository2.Create(character2);
-            dataGridView2usercharacter.DataSource = characterRepository2.GetAll();
+                characterRepository2.Create(character2);
+                dataGridView2usercharacter.DataSource = characterRepository2.GetAll();
+
+
+
+            }
+
+
+             
         }
 
         private void btnWar_Click(object sender, EventArgs e)

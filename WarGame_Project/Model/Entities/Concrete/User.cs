@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WarGame_Project.Business.Data;
+using WarGame_Project.Business.Utilities;
 
 namespace WarGame_Project.Model.Entities.Concrete
 {
@@ -13,7 +15,11 @@ namespace WarGame_Project.Model.Entities.Concrete
         public override int Id { get; set; }    
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string NickName { get; set; }
+
+        
+        public string NickName { get; set; }    
+
+         
 
         public int Point { get; set; }
 

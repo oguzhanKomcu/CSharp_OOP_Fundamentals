@@ -15,7 +15,7 @@ namespace WarGame_Project.Business.Data
         public static List<User> users = new List<User>()
         {
 
-            new User { Id = 1, FirstName = "Hakan" , LastName = "SÖNMEZ" , NickName = "Nemesis" , Age = 26 , Point = 70 }
+            new User { Id = 1, FirstName = "Hakan" , LastName = "SÖNMEZ" , NickName = "Nemesis" , Age = 26 , Point = 700 }
 
 
         };

@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WarGame_Project.Business.Data;
 using WarGame_Project.Business.Repositories.Concrete;
+using WarGame_Project.Business.Utilities;
 using WarGame_Project.Model.Entities.Concrete;
 
 namespace WarGame_Project
@@ -39,14 +41,37 @@ namespace WarGame_Project
 
         private void btnUpdateUser_Click(object sender, EventArgs e)
         {
- 
-            User userupdate = new User();
-            userupdate.Id = int.Parse(textIdFind.Text); 
-            userupdate.NickName = textNickNameUpdate.Text;  
-            userrepository.Update(userupdate);
+            if (Utilities.TextControl(grpUserUpdate) == false)
+            {
+
+                User userupdate = new User();
+                userupdate.Id = int.Parse(textIdFind.Text);
+                foreach (User tim in FakeDatas.users)
+                {
+
+                    if (tim.NickName == textNickNameUpdate.Text)
+                    {
+                        MessageBox.Show("This username is a compliment.");
+                        TextBox textBox = new TextBox();
+                        if (textBox.Name == "textNickName")
+                        {
+                            textBox.Text = String.Empty;
+                        }
+
+                    }
+                    else
+                    {
+                        tim.NickName = textNickNameUpdate.Text;
+                    }
 
 
-            dataGridView1.DataSource = userrepository.GetAll();
+                }
+                userrepository.Update(userupdate);
+
+
+                dataGridView1.DataSource = userrepository.GetAll();
+            }
+               
 
 
 
@@ -55,12 +80,17 @@ namespace WarGame_Project
 
         private void btnFindDELETE_Click(object sender, EventArgs e)
         {
-      
-            int userid = int.Parse(textDeleteId.Text);
-            User user =  userrepository.GetById(userid);
+            if (Utilities.TextControl(grpUserDelete) == false)
+            {
+                int userid = int.Parse(textDeleteId.Text);
+                User user = userrepository.GetById(userid);
 
-            userrepository.Delete(user);
+                userrepository.Delete(user);
+
+
+            }
         
+
 
            
         }

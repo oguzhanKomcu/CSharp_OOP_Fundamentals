@@ -41,14 +41,33 @@ namespace WarGame_Project
                 user1.FirstName = textFirstName.Text;
                 user1.LastName = textLastName.Text; 
                 user1.NickName = textNickName.Text;
+
+                foreach (User tim in FakeDatas.users)
+                {
+
+                    if (tim.NickName == textNickName.Text)
+                    {
+                        MessageBox.Show("This username is a compliment.");
+                        textNickName.Text = String.Empty;   
+
+                    }
+                    else
+                    {
+                        user1.NickName = textNickName.Text;
+                    }
+
+
+                }
+
                 DateTime now = DateTime.Now;
                 user1.Age = now.Year - int.Parse(textBirtyear.Text);
                 if (user1.Age > 18)
                 {
                     groupBoxUserMilitary.Visible = true;
-
-                    userRepository.Create(user1);
                 }
+
+
+                userRepository.Create(user1);
 
                 dataGridViewUserProfil.DataSource = userRepository.GetAll();
             }
