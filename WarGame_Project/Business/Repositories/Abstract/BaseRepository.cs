@@ -18,6 +18,8 @@ namespace WarGame_Project.Business.Repositories.Abstract
 
         public abstract List<T> GetById(T entity);
 
+        public abstract T GetIp(T entity);
+
        
 
 

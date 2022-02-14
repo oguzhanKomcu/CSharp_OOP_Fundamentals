@@ -6,12 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WarGame_Project.Business.Data;
+using WarGame_Project.Business.Repositories.Interface;
 using WarGame_Project.Model;
 using WarGame_Project.Model.Entities.Concrete;
 
 namespace WarGame_Project.Business.Repositories.Concrete
 {
-    internal class WarCharacterRepository : BaseRepository<WarCharacter>
+    internal class WarCharacterRepository : BaseRepository<WarCharacter> , IWarCharacter
     {
         public override void Create(WarCharacter entity)
         {
@@ -77,25 +78,25 @@ namespace WarGame_Project.Business.Repositories.Concrete
             switch (warCharacter.Rank)
             {
                 case "Private First Class (PFC)":
-                    strength = 20 + random.Next(1, 50);
+                    strength = 20 + random.Next(1, 50)/2;
                     break;
                 case "Sergeant(SGT)":
-                    strength = 35 + random.Next(1, 50);
+                    strength = 35 + random.Next(1, 50) / 2;
                     break;
                 case "Sergeant SV":
-                    strength = 50 + random.Next(1, 50);
+                    strength = 50 + random.Next(1, 50) / 2;
                     break;
                 case "Second Lieutenant (2LT)":
-                    strength = 65 + random.Next(1, 50);
+                    strength = 65 + random.Next(1, 50) / 2;
                     break;
                 case "Captain (CPT)":
-                    strength = 75 + random.Next(1, 50);
+                    strength = 75 + random.Next(1, 50) / 2;
                     break;
                 case "Colonel (COL)":
-                    strength = 85 + random.Next(1, 50);
+                    strength = 85 + random.Next(1, 50) / 2;
                     break;
                 case "Genel (GEN)":
-                    strength = 100 + random.Next(1, 50);
+                    strength = 100 + random.Next(1, 50) / 2;
                     break;
             }
             return strength;
@@ -108,22 +109,22 @@ namespace WarGame_Project.Business.Repositories.Concrete
             switch (warCharacter.Weapon)
             {
                 case "AK-47":
-                    strength = 70 + random.Next(1, 50);
+                    strength = 70 + random.Next(1, 50) / 2;
                     break;
                 case "M16":
-                    strength = 55 + random.Next(1, 50);
+                    strength = 55 + random.Next(1, 50) / 2;
                     break;
                 case "QXR":
-                    strength = 45 + random.Next(1, 50);
+                    strength = 45 + random.Next(1, 50) / 2;
                     break;
                 case "AWP":
-                    strength = 90 + random.Next(1, 50);
+                    strength = 90 + random.Next(1, 50) / 2;
                     break;
                 case "UMP-45":
-                    strength = 50 + random.Next(1, 50);
+                    strength = 50 + random.Next(1, 50) / 2;
                     break;
                 case "M60":
-                    strength = 75 + random.Next(1, 50);
+                    strength = 75 + random.Next(1, 50) / 2;
                     break;
 
             }
@@ -138,19 +139,19 @@ namespace WarGame_Project.Business.Repositories.Concrete
             switch (warCharacter.Physic)
             {
                 case "LARGE":
-                    strength = 85 + random.Next(1, 50);
+                    strength = 85 + random.Next(1, 50) / 2;
                     break;
                 case "WEAK":
-                    strength = 55 + random.Next(1, 50);
+                    strength = 55 + random.Next(1, 50) / 2;
                     break;
                 case "MUSCLE":
-                    strength = 75 + random.Next(1, 50);
+                    strength = 75 + random.Next(1, 50) / 2;
                     break;
                 case "RICKETY":
-                    strength = 45 + random.Next(1, 50);
+                    strength = 45 + random.Next(1, 50) / 2;
                     break;
                 case "MIDDLE":
-                    strength = 65 + random.Next(1, 50);
+                    strength = 65 + random.Next(1, 50) / 2;
                     break;
 
 
@@ -167,19 +168,19 @@ namespace WarGame_Project.Business.Repositories.Concrete
             switch (warCharacter.Talent)
             {
                 case "FAST":
-                    strength = 85+random.Next(1,50);
+                    strength = 85+random.Next(1,50) / 2;
                     break;
                 case "STRONG":
-                    strength = 75 + random.Next(1, 50);
+                    strength = 75 + random.Next(1, 50) / 2;
                     break;
                 case "INTELLIGENT":
-                    strength = 60 + random.Next(1, 50);
+                    strength = 60 + random.Next(1, 50) / 2;
                     break;
                 case "AGILE":
-                    strength = 65 + random.Next(1, 50);
+                    strength = 65 + random.Next(1, 50) / 2;
                     break;
                 case "EXPERT":
-                    strength =95 + random.Next(1, 50);
+                    strength =95 + random.Next(1, 50) / 2;
                     break;
             }
             return strength;

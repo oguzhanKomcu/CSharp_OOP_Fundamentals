@@ -33,6 +33,8 @@ namespace WarGame_Project.Model.Entities.Abstract
 
         }
 
+      
+
     }
 
 }
