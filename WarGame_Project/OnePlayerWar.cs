@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -49,8 +50,7 @@ namespace WarGame_Project
             {
                 idwar = 2;
                 war = characterRepository.GetById(idwar);
-                iduser = 2;
-                user = userRepository.GetById(iduser);
+               
 
 
                 lblstrength1.Text = characterRepository.Totalstrentgh(idwar).ToString();
@@ -84,8 +84,6 @@ namespace WarGame_Project
                 {
 
                     idwar = 2;
-                    war = characterRepository.GetById(idwar);         
-
                     labeluUSER1HEALTH.Width = 0;
                     labeluUSER2HEALTH.Width -= characterRepository.Totalstrentgh(idwar);
                     MessageBox.Show($"{user.NickName} YOU DID AND LOSE !! ");
@@ -95,6 +93,8 @@ namespace WarGame_Project
                     point2 += 100;
 
                 }
+
+               
 
             }
 

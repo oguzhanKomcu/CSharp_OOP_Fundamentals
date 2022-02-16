@@ -16,6 +16,7 @@ namespace WarGame_Project.Business.Repositories.Interface
         int WS(WarCharacter entity);
 
         int RS(WarCharacter entity);
+        int Totalstrentgh(int id);
 
 
 

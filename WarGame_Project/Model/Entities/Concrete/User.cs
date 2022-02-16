@@ -13,19 +13,21 @@ namespace WarGame_Project.Model.Entities.Concrete
     {
 
 
-        public override int Id { get; set; }    
+        public override int Id { get; set; }     // property
         
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public string FirstName { get; set; }    // property
+        public string LastName { get; set; }    // property
 
-        
-        public string NickName { get; set; }    
 
-         
+        public string NickName { get; set; }        // property
+
+
 
         public int Point { get; set; }
 
-        private int age;
+       
+
+        private int age;     //I apply encapculation to check the entered age. Thus, I can directly check the entered data from the user.
 
         public int Age
         {
