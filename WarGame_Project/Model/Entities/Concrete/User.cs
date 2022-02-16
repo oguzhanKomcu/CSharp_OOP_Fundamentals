@@ -27,7 +27,7 @@ namespace WarGame_Project.Model.Entities.Concrete
 
        
 
-        private int age;     //I apply encapculation to check the entered age. Thus, I can directly check the entered data from the user.
+        private int _age;     //I apply encapculation to check the entered age. Thus, I can directly check the entered data from the user.
 
         public int Age
         {
