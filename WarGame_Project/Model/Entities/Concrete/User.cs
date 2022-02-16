@@ -54,8 +54,8 @@ namespace WarGame_Project.Model.Entities.Concrete
             }
         }
 
-        public DateTime? UpdateDate { get; internal set; }
-        public DateTime? DeleteDate { get; internal set; }
+        public DateTime? UpdateDate { get; set; }
+        public DateTime? DeleteDate { get;  set; }
 
       
     }
