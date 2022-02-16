@@ -13,7 +13,7 @@ namespace Delegate_And_Exception
             {
                 if (char.IsDigit(character)== false)
                 {
-                    // Since my class is cleared from the Exception class when there is a letter in my character, the constructor method of my class will be activated when an error is thrown.
+                    // Since my class is cleared from the Exception class when there is a letter in my character, the constructor method of my class will be activated when an error is thrown...
                     throw new Has_A_Letter(id);
                 }
 
