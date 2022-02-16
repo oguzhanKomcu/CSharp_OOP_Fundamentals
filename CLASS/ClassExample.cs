@@ -55,7 +55,7 @@ namespace CLASS
                 smtp.Port = 587; // Outlook için 587
                 smtp.EnableSsl = true; // Sunucu SSL kullanıyorsa True olacak
                                        // mail adresimizin kullanıcı adı ve parolasını yazıyoruz
-                smtp.Credentials = new System.Net.NetworkCredential("komcuoguzz@gmail.com", "4585oguz");
+                smtp.Credentials = new System.Net.NetworkCredential("", "");
 
 
                 MailMessage mail = new MailMessage();
