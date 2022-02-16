@@ -51,7 +51,7 @@ namespace Delegate_And_Exception
             mail.To.Add("emailname@gmail.com"); //Email address to send the error to.
             mail.From = new MailAddress("emailname@gmail.com"); //sender email address
             mail.Subject = $"DATE : {DateTime.Now}  CODE ERROR"; //mail header
-            mail.Body =$"Error : {Message}" + System.Environment.MachineName.ToString(); //mail content
+            mail.Body =$"Error : {Message}" + System.Environment.MachineName.ToString(); //mail content.
 
 
             smtpClient.Send(mail);
