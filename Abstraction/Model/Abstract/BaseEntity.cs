@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Abstraction.Model.Abstract
 {
-    public abstract class BaseEntity<T>
+    public abstract class BaseEntity<T>  //By passing "T" type, I ensure that my methods and properties are used in other classes according to the desired type.
     {
 
         public abstract T Id { get; set; }  

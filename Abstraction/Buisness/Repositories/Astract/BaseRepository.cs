@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Abstraction.Buisness.Repositories
 {
-    public abstract class BaseRepository<T>
+    public abstract class BaseRepository<T> //By passing "T" type, I ensure that my methods and properties are used in other classes according to the desired type.
     {
 
         public abstract void Create(T entity); 
