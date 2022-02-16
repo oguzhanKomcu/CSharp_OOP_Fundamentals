@@ -1,7 +1,7 @@
  
  ## OOP (OBJECT ORİENTED PROGRAMİNG)
  
- OOP (Object-Oriented Programming) is supported by many programming languages today.It is a programming technique that shortens software development processes, makes them systematic and regular.It simplifies the maintenance, modification, and debugging of code.Develops software with an object-oriented approach.C# is a programming language that uses this programmatic approach.
+OOP (Object-Oriented Programming) is supported by many programming languages today.It is a programming technique that shortens software development processes, makes them systematic and regular.It simplifies the maintenance, modification, and debugging of code.Develops software with an object-oriented approach.C# is a programming language that uses this programmatic approach.
  
  ## CLASS
  
@@ -16,4 +16,16 @@
  You can view the creation of the class here. [GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/CONSTRUCTOR/Television.cs).
  
  You can see how it works when we create an object here. [GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/CONSTRUCTOR/ConstructorExample.cs).
- 
+
+ ## PROPERTY
+It is a structure that takes value through the get and set methods when defining a member of the class. While calling the value on it with get, we can assign a value to it with set.
+
+You can see my property example here. [GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/WarGame_Project/Model/Entities/Concrete/User.cs).
+
+ ## ENCAPSULATİON
+Encapsulation is the restricted and controlled opening of my areas that are closed to external access, using the get and set methods of the property.Encapsulation can be used, for example, so that even those working in a bank cannot see all the information of the customers. For example, we can close the data entry with the get method and only show the  data to the user.
+
+You can see my example of encapsulation here.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/WarGame_Project/Model/Entities/Concrete/User.cs).
+
+
+
