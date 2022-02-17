@@ -31,13 +31,13 @@ namespace WarGame_Project.Model.Entities.Concrete
 
         public int Age
         {
-            get { return age; }
+            get { return _age; }
             set
             {
 
                 if (value > 18)
                 {
-                    age = value;
+                    _age = value;
                 }
                 else
                 {
