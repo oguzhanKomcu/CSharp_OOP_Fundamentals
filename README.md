@@ -55,3 +55,21 @@ Abstract members specified in a base class must be overridden by inheriting clas
  
  This is how I created my abstract class.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/Abstraction/Buisness/Repositories/Astract/BaseRepository.cs).
  Here too I showed how it is implemented in derived classes.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/Abstraction/Buisness/Repositories/Concrate/BooksRepository.cs).
+ 
+ ## INTERFACE
+ It is one of the biggest members of sustainable software. Another member is Abstract classes. When these two are used together, I think we can write more sustainable software. Classes get their common features from an abstract base class, and when they get their capabilities from an interface, we create better systems.It has a prescriptive feature like abstract classes, but in interfaces the situation is slightly different. Members of abstract classes that do not have abstract specifiers do not have to be overridden in subclasses. In interfaces, all methods in the interface must be in the inheriting class.
+ 
+ 
+ 
+ ##DIFFERENCES OF ABSTRACT CLASS AND INTERFACE
+ 
+ A class can extend only one abstract class. A class can inherit from more than one interface.
+ Methods in abstract classes can have bodies or are marked abstract and override in the inheriting class. In interfaces, the body is definitely not found. The body is created in the inherited subclass.
+ Abstract classes can inherit from interface, provided they implement the interface. Interface can only inherit from interface.
+ Elements in abstract classes can take any access specifier. Public, private, protected.. They are not determined in the interface, they are determined in its subclass.
+Abstract classes can contain constructors. Does not include interfaces.
+Abstract classes can contain static members. Does not include interfaces.
+Abstract classes do not allow multiple inheritance. This is provided by interfaces in multiple inheritance subclasses.
+In abstract classes, only abstract elements must be overridden in subclasses. Unsigned members do not have to be in subclasses. In this way, code clutter is avoided by keeping only the common features in the subclasses. But all elements in Interface must be implemented in subclass.
+Abstract classes can also be written by writing common properties.We can say that there is a relationship between IS and A. We use interfaces when we want to add capabilities to classes. This is also called the Can-do relationship.
+ 
