@@ -17,7 +17,7 @@ namespace Static_Class
         {
 
 
-            double total = km * 100000;
+            double total = km * _1cm;
 
             return total;
 
@@ -25,16 +25,18 @@ namespace Static_Class
 
         public static double DekarToM2Converter(double dekar)
         {
-            return dekar * 1000;
+            return dekar * _1m2;
         }
 
         public static double FitToM(double feet)
         {
-            return feet * 0.3048;
+            return feet * _1m;
         }
 
 
 
-
+        public const double _1cm = 100000;
+        public const double _1m2 = 1000;
+        public const double _1m = 0.3048;
     }
 }
