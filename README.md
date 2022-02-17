@@ -41,3 +41,17 @@ It is an expression that we use when we want to use the value of a variable in a
 
 I've shown a use case here.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/Static_Class/Unit_converter.cs).
 
+## INHERITANCE
+It is one of the OOP techniques. In fact, the codes can be developed more systematically, orderly and quickly in this way. Inheritance is used to establish and create a hierarchical structure between classes. In the base class, there are methods with common properties that subclasses will take, so we do not repeat the code.A class can only inherit from a single class. It cannot inherit from more than one class at the same time. When we want to use multiple inheritance, we use interfaces.
+
+I was creating my base class here.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/%C4%B0nheritance/Model/BaseEntity/BaseProduct.cs).
+Here, I inherited my derived class.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/%C4%B0nheritance/Model/Entities/Dishwasher.cs).
+
+## ABSTRACTİON
+Abstraction means defining basic tasks and defining details to a class or method.The concept of abstraction is to isolate the operation inside the class from the outside, that is, to hide it.More specifically, abstraction is the process of hiding implementation details and only showing functionality to the user.We use Abstract class-members and interfaces for abstraction.
+
+## ABSTRACT CLASS AND ABSTRACT MEMBER
+Abstract members specified in a base class must be overridden by inheriting classes.We can think of this as a signed contract, that is, we set a rule.The bodies of abstract methods or properties are not created in the class, but overridden in the class that inherits from it.They cannot be specified with private access specifiers.Classes containing abstract elements must have an abstract class.We cannot create objects from abstract classes, but we can create reference points.We cannot create objects from abstract classes, but we can create reference points.
+ 
+ This is how I created my abstract class.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/Abstraction/Buisness/Repositories/Astract/BaseRepository.cs).
+ Here too I showed how it is implemented in derived classes.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/Abstraction/Buisness/Repositories/Concrate/BooksRepository.cs).
