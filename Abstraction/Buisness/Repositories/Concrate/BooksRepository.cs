@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace Abstraction.Buisness.Repositories.Concrate
 {
-    public class BooksRepository : BaseRepository<Books>
-    {
+    public class BooksRepository : BaseRepository<Books> //It gave an error the first time I wrote it. I assigned the namespace to my usings by doing "ctrl + . ".
+    {                                                   //Later, since it is a rule maker, it required the method in this class even if it has no sign. Again, I added my                                                                        method to my class by doing "ctrl + . ".
+    
         public override void Create(Books entity)
         {
            DataBooks.books.Add(entity); 
