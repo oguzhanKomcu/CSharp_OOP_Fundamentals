@@ -13,7 +13,7 @@ OOP (Object-Oriented Programming) is supported by many programming languages tod
  
  It is a method that works by ourselves or by default when creating the class. When an object is created, the constructor is called automatically.It does not return a value.It does the situations we want and finishes it when the class is created.You can find examples and more information on the subject in the examples I made.
  
- You can view the creation of the class here. [GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/CONSTRUCTOR/Television.cs).
+ You can see how the constructor method is created here. [GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/CONSTRUCTOR/Television.cs).
  
  You can see how it works when we create an object here. [GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/CONSTRUCTOR/ConstructorExample.cs).
 
@@ -27,5 +27,17 @@ Encapsulation is the restricted and controlled opening of my areas that are clos
 
 You can see my example of encapsulation here.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/WarGame_Project/Model/Entities/Concrete/User.cs).
 
+## STATİC CLASS AND STATİC MEMBER
+Static elements are class members that I can call directly with the class name without generating any objects from the class.(classname+"."+"StatikMemberName")
+Static elements keep the value assigned to them last as long as the application is running.Static members and stratic classes are created directly in the ramin heap region when the program is started. Thus, we can access and process faster.Static members cannot contain non-static class elements.
+Non-static methods or elements cannot be created within static classes. Logically, static classes cannot access a non-static element because it resides directly in the ramin heap region and cannot access an uncreated class element either.Defining classes as static is not a requirement, it's just an approach that improves readability.
 
+You can see how it was created here.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/Static_Class/Unit_converter.cs).
+
+An example for usage[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/Static_Class/Static_Class_Example.cs).
+
+## CONST
+It is an expression that we use when we want to use the value of a variable in a way that cannot be changed as a constant.Its value is assigned in the row where it is defined.For example, if we are using constant values of Pi in our program, it will be very useful to use const. In this way, less memory space will be used.
+
+I've shown a use case here.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/Static_Class/Unit_converter.cs).
 
