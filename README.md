@@ -85,3 +85,7 @@ Abstract members specified in a base class must be overridden by inheriting clas
 
 -Abstract classes can also be written by writing common properties.We can say that there is a relationship between IS and A. We use interfaces when we want to add capabilities to classes. This is also called the Can-do relationship.
  
+## POLYMORPHİSM 
+The use of properties or methods that perform different operations but have the same name is called polymorphism. Polymorphism means "containing many forms". It is used for methods that have different operations even though they have the same name.In fact, we have started to use this approach until now. We have applied polymorphism by overriding our methods in a base class according to their own situation in subclasses.
+
+ I showed this in my example.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/Polymorphism/GEOMETRIC_SHAPES.cs).
