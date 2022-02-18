@@ -59,7 +59,11 @@ Abstract members specified in a base class must be overridden by inheriting clas
  ## INTERFACE
  It is one of the biggest members of sustainable software. Another member is Abstract classes. When these two are used together, I think we can write more sustainable software. Classes get their common features from an abstract base class, and when they get their capabilities from an interface, we create better systems.It has a prescriptive feature like abstract classes, but in interfaces the situation is slightly different. Members of abstract classes that do not have abstract specifiers do not have to be overridden in subclasses. In interfaces, all methods in the interface must be in the inheriting class.
  
+ This is how I created my interface.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/Interface/Buisness/Repositories/Interface/BookInterface.cs).
  
+  Here too I showed how it is implemented in derived classes.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/Interface/Buisness/Repositories/Concrate/BooksRepository.cs).
+  
+  I created a more comprehensive and understandable interface in my project.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/WarGame_Project/Business/Repositories/Interface/Interface1.cs).
  
  ## DIFFERENCES OF ABSTRACT CLASS AND INTERFACE
  
