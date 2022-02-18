@@ -25,7 +25,7 @@ namespace CLASS
         public int Gear;
         public int Price;
         public string color; // field
-
+      
         public void BikeSpeed () //method
         {
             MessageBox.Show("Drive carefully .Don't forget to put on your helmet");
