@@ -7,7 +7,7 @@ using WarGame_Project.Model.Entities.Concrete;
 
 namespace WarGame_Project.Business.Repositories.Interface
 {
-     interface IWarCharacter
+    interface IWarCharacter
     {
 
         int DL(WarCharacter entity);
@@ -19,6 +19,13 @@ namespace WarGame_Project.Business.Repositories.Interface
         int Totalstrentgh(int id);
 
 
+
+
+    }
+
+    interface IUser
+    {
+        string GetIp(User entity);
 
 
     }

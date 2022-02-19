@@ -21,7 +21,7 @@ namespace WarGame_Project.Model.Entities.Concrete
 
         public string NickName { get; set; }        // property
 
-
+        public string Ip { get; set; }
 
         public int Point { get; set; }
 

@@ -29,7 +29,8 @@ namespace WarGame_Project.Business.Repositories.Concrete
         {
      
             List<WarCharacter> warCharacters = FakeDatas.warCharacters.ToList();
-            return warCharacters;   
+            return warCharacters;  
+            
         }
 
         public override WarCharacter GetById(int id)
@@ -78,7 +79,7 @@ namespace WarGame_Project.Business.Repositories.Concrete
             switch (warCharacter.Rank)
             {
                 case "Private First Class (PFC)":
-                    strength = 20 + random.Next(1, 50)/2;
+                    strength = 20 + random.Next(1, 50) / 2;
                     break;
                 case "Sergeant(SGT)":
                     strength = 35 + random.Next(1, 50) / 2;

@@ -56,9 +56,11 @@ namespace WarGame_Project
 
                 groupBoxWAR1.Visible = false;
                 grpWar2.Visible = true;
+               
             }
 
 
+           
 
 
 
@@ -108,10 +110,10 @@ namespace WarGame_Project
 
                 groupBoxWAR1.Visible = false;
                 grpWar2.Visible = true;
-
+                
             }
 
-
+            
         }
 
         private void btnFire2_1user_Click(object sender, EventArgs e)
@@ -228,7 +230,7 @@ namespace WarGame_Project
 
         private void btnResult_Click(object sender, EventArgs e)
         {
-            if (point1 > 200)
+            if (point1 >= 200)
             {
                 int user1id = 2;
                 user1 = userRepository.GetById(user1id);
@@ -258,7 +260,7 @@ namespace WarGame_Project
                 }
 
             }
-            else if (point2 > 200)
+            else if (point2 >= 200)
             {
                 int user2id = 3;
                 user1 = userRepository.GetById(user2id);

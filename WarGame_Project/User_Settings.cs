@@ -61,7 +61,7 @@ namespace WarGame_Project
                     }
                     else
                     {
-                        tim.NickName = textNickNameUpdate.Text;
+                        userupdate.NickName = textNickNameUpdate.Text;
                     }
 
 
@@ -78,22 +78,7 @@ namespace WarGame_Project
 
         }
 
-        private void btnFindDELETE_Click(object sender, EventArgs e)
-        {
-            if (Utilities.TextControl(grpUserDelete) == false)
-            {
-                int userid = int.Parse(textDeleteId.Text);
-                User user = userrepository.GetById(userid);
-
-                userrepository.Delete(user);
-
-
-            }
-        
-
-
-           
-        }
+    
 
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -105,6 +90,19 @@ namespace WarGame_Project
         private void User_Settings_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnDeleteUser_Click(object sender, EventArgs e)
+        {
+            if (Utilities.TextControl(grpUserDelete) == false)
+            {
+                int userid = int.Parse(textDeleteId.Text);
+                User user = userrepository.GetById(userid);
+
+                userrepository.Delete(user);
+
+
+            }
         }
     }
 }

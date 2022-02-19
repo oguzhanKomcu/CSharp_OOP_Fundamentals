@@ -36,11 +36,11 @@
             this.label10 = new System.Windows.Forms.Label();
             this.textNickNameUpdate = new System.Windows.Forms.TextBox();
             this.grpUserDelete = new System.Windows.Forms.GroupBox();
-            this.btnDeleteUser = new System.Windows.Forms.Button();
             this.textDeleteId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnBack = new System.Windows.Forms.Button();
+            this.btnDeleteUser = new System.Windows.Forms.Button();
             this.grpUserUpdate.SuspendLayout();
             this.grpUserDelete.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -127,15 +127,6 @@
             this.grpUserDelete.TabStop = false;
             this.grpUserDelete.Text = "DELETE USER";
             // 
-            // btnDeleteUser
-            // 
-            this.btnDeleteUser.Location = new System.Drawing.Point(97, 85);
-            this.btnDeleteUser.Name = "btnDeleteUser";
-            this.btnDeleteUser.Size = new System.Drawing.Size(140, 42);
-            this.btnDeleteUser.TabIndex = 2;
-            this.btnDeleteUser.Text = "DELETE";
-            this.btnDeleteUser.UseVisualStyleBackColor = true;
-            // 
             // textDeleteId
             // 
             this.textDeleteId.Location = new System.Drawing.Point(96, 45);
@@ -173,6 +164,16 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // btnDeleteUser
+            // 
+            this.btnDeleteUser.Location = new System.Drawing.Point(98, 86);
+            this.btnDeleteUser.Name = "btnDeleteUser";
+            this.btnDeleteUser.Size = new System.Drawing.Size(139, 46);
+            this.btnDeleteUser.TabIndex = 9;
+            this.btnDeleteUser.Text = "DELETE";
+            this.btnDeleteUser.UseVisualStyleBackColor = true;
+            this.btnDeleteUser.Click += new System.EventHandler(this.btnDeleteUser_Click);
+            // 
             // User_Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -205,10 +206,10 @@
         private Button btnUpdateUser;
         private Label label1;
         private GroupBox grpUserDelete;
-        private Button btnDeleteUser;
         private TextBox textDeleteId;
         private Label label2;
         private DataGridView dataGridView1;
         private Button btnBack;
+        private Button btnDeleteUser;
     }
 }
