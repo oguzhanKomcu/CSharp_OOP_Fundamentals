@@ -11,6 +11,8 @@ namespace CLASS
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+
+
             //Using the class we created, we create a new object from this class.
             //classname + variable + = + new + classname();
             // " = " : The " = " operator that points to and refers to.
