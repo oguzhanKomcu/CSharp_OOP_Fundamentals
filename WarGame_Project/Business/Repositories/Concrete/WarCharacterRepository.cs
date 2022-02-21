@@ -3,6 +3,7 @@ using Abstraction.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using WarGame_Project.Business.Data;
@@ -63,7 +64,7 @@ namespace WarGame_Project.Business.Repositories.Concrete
             warCharacter.Weapon = entity.Weapon;
             warCharacter.Physic = entity.Physic;
             warCharacter.Talent = entity.Talent;
-
+           
 
         }
 
@@ -220,8 +221,8 @@ namespace WarGame_Project.Business.Repositories.Concrete
             int totalstrength = (warCharacterRepository.PS(character) + warCharacterRepository.RS(character) + warCharacterRepository.WS(character) + warCharacterRepository.TS(character)) / 4;
 
             return totalstrength;   
-        } 
+        }
 
-
+        
     }
 }
