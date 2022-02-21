@@ -89,6 +89,11 @@ Abstract members specified in a base class must be overridden by inheriting clas
 The use of properties or methods that perform different operations but have the same name is called polymorphism. Polymorphism means "containing many forms". It is used for methods that have different operations even though they have the same name.In fact, we have started to use this approach until now. We have applied polymorphism by overriding our methods in a base class according to their own situation in subclasses.
 
  I showed this in my example.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/Polymorphism/GEOMETRIC_SHAPES.cs).
+ 
+ ## STRUCT
+If our project does not require as complex operations as class and encapsulates the data to be kept, we may prefer a struct structure in such cases.Properties can be assigned values even before the object is created. They are of value type. The created data is kept in the ramin stack area. Values must be given by default.
+
+ I showed this in my example.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/Struct/Form1.cs).
 
 ## WAR GAME PROJECT
 My sample project that I made using Oop principles. I wanted to do it according to the game operation plan.
