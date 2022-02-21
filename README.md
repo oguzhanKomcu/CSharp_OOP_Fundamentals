@@ -97,4 +97,5 @@ If our project does not require as complex operations as class and encapsulates 
 
 ## WAR GAME PROJECT
 My sample project that I made using Oop principles. I wanted to do it according to the game operation plan.
+
 You can view my project here.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/Polymorphism/GEOMETRIC_SHAPES.cs).
