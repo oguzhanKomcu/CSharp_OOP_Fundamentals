@@ -1,10 +1,13 @@
- 
-![alt text](https://talentgrid.io/wp-content/uploads/2021/09/procedural-programming-vs-object-oriented-programming.png)
  ## OOP (OBJECT ORİENTED PROGRAMİNG)
+ 
+<img src="https://talentgrid.io/wp-content/uploads/2021/09/procedural-programming-vs-object-oriented-programming.png" width="500" height="300">
+
  
 OOP (Object-Oriented Programming) is supported by many programming languages today.It is a programming technique that shortens software development processes, makes them systematic and regular.It simplifies the maintenance, modification, and debugging of code.Develops software with an object-oriented approach.C# is a programming language that uses this programmatic approach.
  
  ## CLASS
+ 
+ <img src="https://javatutorial.net/wp-content/uploads/2014/11/class-object-featured-image.png" width="400" height="200">
  
  The object phenomenon in OOP is almost the same as in everyday life.Objects consist of a main class and are separated according to their properties.For example, a bicycle is an object. It has certain properties. By defining these properties in a bike class, we can produce many bike objects.In C#, we actually work with many embedded classes. For example, Random, button , Texbox etc.You can learn about the example and operation of the Oop "class" topic here.
  
@@ -67,6 +70,8 @@ Abstract members specified in a base class must be overridden by inheriting clas
   I created a more comprehensive and understandable interface in my project.[GitHub Pages](https://github.com/oguzhanKomcu/CSharp_OOP_Fundamentals/blob/master/WarGame_Project/Business/Repositories/Interface/Interface1.cs).
  
  ## DIFFERENCES OF ABSTRACT CLASS AND INTERFACE
+ 
+ <img src="http://damrakoc.com/blog/wp-content/uploads/2017/07/OpMyR.png" width="500" height="300">
  
  -A class can extend only one abstract class. A class can inherit from more than one interface.
  
