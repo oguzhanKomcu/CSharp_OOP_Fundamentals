@@ -71,7 +71,7 @@ Abstract members specified in a base class must be overridden by inheriting clas
  
  ## DIFFERENCES OF ABSTRACT CLASS AND INTERFACE
  
- <img src="http://damrakoc.com/blog/wp-content/uploads/2017/07/OpMyR.png">
+ <img src="http://damrakoc.com/blog/wp-content/uploads/2017/07/OpMyR.png" width="300" height="150" >
  
  -A class can extend only one abstract class. A class can inherit from more than one interface.
  
