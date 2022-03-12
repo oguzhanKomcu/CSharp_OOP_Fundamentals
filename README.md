@@ -1,6 +1,6 @@
  ## OOP (OBJECT ORİENTED PROGRAMİNG)
  
-<img src="https://user-images.githubusercontent.com/96787308/158017748-6ac16fcb-da24-4cea-b8a2-fd784eabfe51.png" width="600" height="400">
+<img src="https://i0.wp.com/i.postimg.cc/BZ7Tnzfq/Oop-concept.jpg?w=810&ssl=1" width="600" height="400">
 
 
 OOP (Object-Oriented Programming) is supported by many programming languages today.It is a programming technique that shortens software development processes, makes them systematic and regular.It simplifies the maintenance, modification, and debugging of code.Develops software with an object-oriented approach.C# is a programming language that uses this programmatic approach.
